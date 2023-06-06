@@ -1,0 +1,51 @@
+.button {
+  display: flex;
+
+  &--left {
+    justify-content: flex-start;
+  }
+
+  &--center {
+    justify-content: center;
+  }
+
+  &--right {
+    justify-content: flex-end;
+  }
+
+  &--blue {
+    .button__link {
+      background-color: $main400;
+      color: $white;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: $secondary500;
+        color: $white;
+        transition: all 0.3s ease;
+      }
+    }
+  }
+
+  &--normal {
+    .button__link {
+      padding: 1.4rem 2.8rem 1.4rem 2.8rem;
+    }
+  }
+
+  &--big {
+    .button__link {
+      padding: 1.8rem 3.3rem 1.8rem 3.2rem;
+    }
+  }
+
+  &__link {
+    border-radius: 0.4rem;
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+    display: inline-block;
+  }
+}
