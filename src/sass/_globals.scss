@@ -1,0 +1,51 @@
+@use './variables' as variables;
+
+html {
+  font-size: 10px;
+  font-size: 62.5%;
+}
+
+body {
+  position: relative;
+  background-color: $black;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+section {
+  position: relative;
+  z-index: 3;
+}
+
+.container {
+  width: 100%;
+  padding: 0 2rem;
+  margin: 0 auto;
+
+  @include variables.media-up(xxl) {
+    max-width: 164rem;
+  }
+
+  &--wider {
+    @include variables.media-up(xxl) {
+      max-width: 168rem;
+    }
+  }
+
+  .row {
+    display: flex;
+    margin-left: -2rem;
+    margin-right: -2rem;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    .col {
+      padding-right: 2rem;
+      padding-left: 2rem;
+      width: 100%;
+    }
+  }
+}
