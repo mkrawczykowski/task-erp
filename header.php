@@ -14,43 +14,27 @@
 </head>
 
 <body>
-  <header>
-    <nav>
-      <a class="logo" href="<?php echo site_url(); ?>">
-        <picture class="logo__picture">
-          <source type="image/webp"
-            srcset=
-              "
-                <?php echo get_stylesheet_directory_uri(); ?>/public/teddy-logo.webp,
-                <?php echo get_stylesheet_directory_uri(); ?>/public/teddy-logo@2x.webp 2x
-              "
-          >
-          <img 
-            srcset=
-              "
-                <?php echo get_stylesheet_directory_uri(); ?>/public/teddy-logo.png,
-                <?php echo get_stylesheet_directory_uri(); ?>/public/teddy-logo@2x.png 2x
-              "
-              src="<?php echo get_stylesheet_directory_uri(); ?>/public/teddy-logo.png"
-              alt="Klub bokserski Teddy - logo"
-              decoding="async"
-          >
-        </picture>
-      </a>
+  <header class="header">
+    <div class="container">
+      <nav>
+        <a class="logo" href="<?php echo site_url(); ?>">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/logo.svg" alt="LOGO" width="92" height="39">
+        </a>
 
-      <div class="hamburger" id="js-hamburger">
-        <span></span>
-        <span></span>
-      </div>
+        <div class="hamburger" id="js-hamburger">
+          <span></span>
+          <span></span>
+        </div>
 
-      <?php
-        wp_nav_menu( array(
-          'theme_location' => 'header-menu',
-          'container'      => 'nav',
-          'container_class'=> 'main-nav',
-          'menu_class'     => 'main-nav__nav',
-          'container_id'   => 'js-main-nav'
-        ) );
-      ?>
-    </nav>
+        <?php
+          wp_nav_menu( array(
+            'theme_location' => 'header-menu',
+            'container'      => 'div',
+            'container_class'=> 'main-nav',
+            'menu_class'     => 'main-nav__nav',
+            'container_id'   => 'js-main-nav'
+          ) );
+        ?>
+      </nav>
+    </div>
   </header>

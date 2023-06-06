@@ -3,11 +3,22 @@
 html {
   font-size: 10px;
   font-size: 62.5%;
+  scrollbar-color: variables.$main300 variables.$secondary50;
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background-color: variables.$secondary50;
+}
+
+::-webkit-scrollbar-thumb {
+  background: variables.$main300;
 }
 
 body {
   position: relative;
-  background-color: $black;
 }
 
 img {
