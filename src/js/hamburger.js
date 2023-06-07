@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
       document.body.style.overflow = 'hidden';
     }
     if (!hamburger.classList.contains('active')) {
-      document.body.style.overflow = 'auto';
+      document.body.style.removeProperty('overflow');
     }
 
   });

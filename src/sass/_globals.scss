@@ -32,23 +32,18 @@ img {
   height: auto;
 }
 
-section {
-  position: relative;
-  z-index: 3;
-}
-
 .container {
   width: 100%;
   padding: 0 2rem;
   margin: 0 auto;
 
   @include variables.media-up(xxl) {
-    max-width: 164rem;
+    max-width: 125rem;
   }
 
-  &--wider {
+  &.container--wider {
     @include variables.media-up(xxl) {
-      max-width: 168rem;
+      max-width: 140rem;
     }
   }
 

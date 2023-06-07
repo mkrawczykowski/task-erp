@@ -15,26 +15,32 @@
 
 <body>
   <header class="header">
-    <div class="container">
-      <nav>
-        <a class="logo" href="<?php echo site_url(); ?>">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/logo.svg" alt="LOGO" width="92" height="39">
-        </a>
+    <div class="container container--wider">
+      <div class="row">
+        <div class="col">
+          <nav>
+          <a class="logo" href="<?php echo site_url(); ?>">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/logo.svg" alt="LOGO" width="92" height="39">
+          </a>
 
-        <div class="hamburger" id="js-hamburger">
-          <span></span>
-          <span></span>
-        </div>
+          <div class="hamburger" id="js-hamburger">
+            <span></span>
+            <span></span>
+          </div>
 
-        <?php
-          wp_nav_menu( array(
-            'theme_location' => 'header-menu',
-            'container'      => 'div',
-            'container_class'=> 'main-nav',
-            'menu_class'     => 'main-nav__nav',
-            'container_id'   => 'js-main-nav'
-          ) );
-        ?>
-      </nav>
+          <?php
+            wp_nav_menu( array(
+              'theme_location' => 'header-menu',
+              'container'      => 'div',
+              'container_class'=> 'main-nav',
+              'menu_class'     => 'main-nav__nav',
+              'container_id'   => 'js-main-nav'
+            ) );
+          ?>
+        </nav>  
+        </div>  
+      </div>
+      
+      
     </div>
   </header>

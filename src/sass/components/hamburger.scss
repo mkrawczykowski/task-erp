@@ -9,6 +9,10 @@
   cursor: pointer;
   z-index: 3;
 
+  @include media-up(xxl) {
+    display: none;
+  }
+
   &:before {
     content: 'Menu';
     font-family: 'Rubik', sans-serif;

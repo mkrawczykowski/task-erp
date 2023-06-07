@@ -1,5 +1,9 @@
 .logo {
-  width: 9rem;
+  width: 9.07rem;
   height: 2.727rem;
   margin-left: 0.2rem;
+
+  @include media-up(xxl) {
+    margin-top: 0.2rem;
+  }
 }
