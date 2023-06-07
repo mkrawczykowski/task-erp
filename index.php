@@ -7,6 +7,10 @@
 		<!-- <div class="button button--big button--blue button--left">
 			<a href="" class="button__link">Umów demo</a>
 		</div> -->
+
+		<?php
+			the_content();
+		?>
 		
 	</main>
 <br>
@@ -17,7 +21,13 @@
 <br>
 <br>
 <br>
-<br>
+<!-- <div class="headings-text headings-text--left">
+	<h3 class="headings-text__heading-small headings-text__heading-small--mb-small">Name erp</h3>
+	<h2 class="headings-text__heading-main headings-text__heading-main--big">Zarządzaj firmą elastycznie,<br> dzięki Name™ ERP</h2>
+	<p class="headings-text__paragraph">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 	eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+	</p>
+</div> -->
 <br>
 <br>
 <br>

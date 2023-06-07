@@ -1,16 +1,40 @@
 .button {
   display: flex;
 
-  &.button--left {
-    justify-content: flex-start;
+  &.button--mobile-left {
+    @include media-down(xxl) {
+      justify-content: flex-start;
+    }
   }
 
-  &.button--center {
-    justify-content: center;
+  &.button--desktop-left {
+    @include media-up(xxl) {
+      justify-content: flex-start;
+    }
   }
 
-  &.button--right {
-    justify-content: flex-end;
+  &.button--mobile-center {
+    @include media-down(xxl) {
+      justify-content: center;
+    }
+  }
+
+  &.button--desktop-center {
+    @include media-up(xxl) {
+      justify-content: center;
+    }
+  }
+
+  &.button--mobile-right {
+    @include media-down(xxl) {
+      justify-content: flex-end;
+    }
+  }
+
+  &.button--desktop-right {
+    @include media-up(xxl) {
+      justify-content: flex-end;
+    }
   }
 
   &.button--blue {

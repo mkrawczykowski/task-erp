@@ -1,0 +1,15 @@
+.left-text-right-image {
+  padding: 8.4rem 0;
+
+  @include media-up(xxl) {
+    padding: 15.4rem 0;
+  }
+
+  .button {
+    margin-top: 3.2rem;
+
+    @include media-up(xxl) {
+      margin-top: 3.9rem;
+    }
+  }
+}

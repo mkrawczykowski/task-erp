@@ -1,5 +1,5 @@
 <?php
-// register a testimonial block
+
 acf_register_block(array(
   'name'              => 'left-text-right-image',
   'title'             => __('Left text, right image'),
