@@ -1,20 +1,20 @@
 .button {
   display: flex;
 
-  &--left {
+  &.button--left {
     justify-content: flex-start;
   }
 
-  &--center {
+  &.button--center {
     justify-content: center;
   }
 
-  &--right {
+  &.button--right {
     justify-content: flex-end;
   }
 
-  &--blue {
-    .button__link {
+  &.button--blue {
+    &>a {
       background-color: $main400;
       color: $white;
       transition: all 0.3s ease;
@@ -27,19 +27,31 @@
     }
   }
 
-  &--normal {
-    .button__link {
+  &.button--normal {
+    &>a {
       padding: 1.4rem 2.8rem 1.4rem 2.8rem;
     }
   }
 
-  &--big {
-    .button__link {
+  &.button--big {
+    &>a {
       padding: 1.8rem 3.3rem 1.8rem 3.2rem;
     }
   }
 
-  &__link {
+  &.button--menu {
+    margin-top: 1.2rem;
+    display: inline-block;
+
+    &>a {
+      padding: 1.5rem 2.8rem 1.3rem 2.8rem;
+      font-size: 1.6rem;
+      line-height: 2.1rem;
+      letter-spacing: 0.3px;
+    }
+  }
+
+  &>a {
     border-radius: 0.4rem;
     font-family: 'Rubik', sans-serif;
     font-style: normal;
