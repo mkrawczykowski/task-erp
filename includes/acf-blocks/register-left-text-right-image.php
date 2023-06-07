@@ -11,7 +11,6 @@ acf_register_block(array(
 ));
 
 function left_text_right_image__callback( $block ) {
-    
   $slug = str_replace('acf/', '', $block['name']);
     
   if( file_exists( get_theme_file_path("/template-parts/blocks/{$slug}/{$slug}.php") ) ) {
