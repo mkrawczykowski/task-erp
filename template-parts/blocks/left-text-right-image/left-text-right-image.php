@@ -8,6 +8,7 @@
 $heading_small = get_field('heading_small');
 $heading_main = get_field('heading_main');
 $text = get_field('text');
+$image = get_field('image');
 
 $id = 'left-text-right-image-' . $block['id'];
 
@@ -35,23 +36,9 @@ $align_class = $block['align'] ? 'align' . $block['align'] : '';
           <a href="" class="button__link">Porozmawiajmy!</a>
         </div>
       </div>
-      <div class="col">
-
+      <div class="col col--40 left-text-right-image__image-col">
+        <?php echo wp_get_attachment_image($image, 'full', NULL, array('class' => 'left-text-right-image__image', 'loading' => 'eager' )); ?>
       </div>
     </div>
   </div>
 </section>
-
-<!-- <blockquote id="<?php echo $id; ?>" class="left-text-right-image <?php echo $align_class; ?>">
-    <p><?php the_field('testimonial'); ?></p>
-    <cite>
-        <img src="<?php echo $avatar['url']; ?>" alt="<?php echo $avatar['alt']; ?>" />
-        <span><?php the_field('author'); ?></span>
-    </cite>
-</blockquote> -->
-<!-- <style type="text/css">
-    <?php echo $id; ?> {
-        background: <?php the_field('background_color'); ?>;
-        color: <?php the_field('text_color'); ?>;
-    }
-</style> -->

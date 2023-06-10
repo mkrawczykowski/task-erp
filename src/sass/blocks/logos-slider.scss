@@ -1,0 +1,31 @@
+.logos-slider {
+  .container {
+    .row {
+      .col {
+        padding: 6.3rem 6rem;
+      }
+    }
+  }
+
+  &__heading {
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    color: $black;
+    text-align: center;
+    letter-spacing: -0.2px;
+
+    @include media-up(xxl) {
+      font-size: 1.8rem;
+      line-height: 2.1rem;
+    }
+
+    span {
+      color: $main400;
+    }
+  }
+
+  &__logos-list {}
+}
