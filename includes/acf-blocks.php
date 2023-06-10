@@ -14,6 +14,7 @@ function acf_init_blocks() {
     require_once get_template_directory() . '/includes/acf-blocks/register-left-text-right-image.php';        
     require_once get_template_directory() . '/includes/acf-blocks/register-logos-slider.php';        
     require_once get_template_directory() . '/includes/acf-blocks/register-two-headings-text.php';        
+    require_once get_template_directory() . '/includes/acf-blocks/register-cards-with-icons.php';        
   }
 }
 add_action('acf/init', 'acf_init_blocks');
