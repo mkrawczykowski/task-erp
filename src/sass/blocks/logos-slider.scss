@@ -1,8 +1,20 @@
 .logos-slider {
   .container {
     .row {
-      .col {
-        padding: 6.3rem 6rem;
+      .col--heading {
+        padding: 6.3rem 6rem 3.3rem;
+
+        @include media-up(xxl) {
+          padding: 6.3rem 6rem 3.5rem;
+        }
+      }
+
+      .col--logos {
+        padding: 0rem 2rem 3.7rem;
+
+        @include media-up(xxl) {
+          padding: 0rem 12.3rem 3.7rem;
+        }
       }
     }
   }
@@ -27,5 +39,25 @@
     }
   }
 
-  &__logos-list {}
+  &__logos-list {
+    display: flex;
+    // column-gap: 2rem;
+
+    // @include media-up(xxl) {
+    //   column-gap: 3rem;
+    // }
+
+    .logos-slider__item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 16.5rem;
+      height: 6rem;
+      flex-shrink: 0;
+
+      @include media-up(xxl) {
+        width: 17.7rem;
+      }
+    }
+  }
 }

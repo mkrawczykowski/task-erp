@@ -5,11 +5,11 @@ document.addEventListener('DOMContentLoaded', () => {
   console.log('swiper');
   const swiper = new Swiper('.swiper', {
     speed: 400,
-    spaceBetween: 100,
-    slidesPerView: 2,
+    spaceBetween: 20,
+    slidesPerView: 'auto',
     breakpoints: {
       1400: {
-        slidesPerView: 5,
+        spaceBetween: 30,
       }
     }
   });

@@ -19,7 +19,7 @@ $align_class = $block['align'] ? 'align' . $block['align'] : '';
 <section class="logos-slider">
   <div class="container">
     <div class="row">
-      <div class="col">
+      <div class="col col--heading">
         <?php
           echo ($heading_part_1 && $heading_part_2) ?
             '<h2 class="logos-slider__heading">'
@@ -27,7 +27,8 @@ $align_class = $block['align'] ? 'align' . $block['align'] : '';
             . $heading_part_2
             . '</h2>' : NULL;
         ?>
-
+      </div>
+      <div class="col col--logos">
         <?php if( have_rows('logos') ): ?>
           <div class="logos-slider__slider swiper">
             <ul class="logos-slider__logos-list swiper-wrapper">
