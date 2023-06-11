@@ -27,9 +27,10 @@
 
       @include media-up(xxl) {
         width: calc(25% - 2.3rem);
-        padding-top: 6.1rem;
+        padding-top: 6rem;
         min-height: 24rem;
         transition: all 0.3s ease;
+        position: relative;
       }
 
       &:hover {
@@ -42,13 +43,11 @@
         .cards-with-icons__download {
           opacity: 1;
           transition: all 0.3s ease;
-          margin-top: 1.5rem;
-          font-size: 1.4rem;
+          transition-delay: 150ms;
 
-          &:after {
-            right: -0.6rem;
-            top: 0.3rem;
-            transition: all 0.3s ease;
+          @include media-up(xxl) {
+            top: 17.3rem;
+            font-size: 1.4rem;
           }
         }
       }
@@ -72,7 +71,7 @@
         margin-top: 1.1rem;
 
         @include media-up(xxl) {
-          margin-top: 2.2rem;
+          margin-top: 2.3rem;
           font-size: 2.4rem;
         }
       }
@@ -89,8 +88,12 @@
         padding-right: 0.5rem;
 
         @include media-up(xxl) {
+          padding-right: 0.8rem;
           opacity: 0;
           transition: all 0.3s ease;
+          position: absolute;
+          top: 17.3rem;
+          font-size: 1.4rem;
         }
 
         &:after {
@@ -103,6 +106,11 @@
           display: inline-block;
           width: 1.1rem;
           height: 1.5rem;
+
+          @include media-up(xxl) {
+            right: -0.7rem;
+            top: 0.3rem;
+          }
         }
       }
     }
