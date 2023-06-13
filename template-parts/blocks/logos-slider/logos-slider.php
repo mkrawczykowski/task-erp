@@ -9,7 +9,7 @@ $heading_part_1 = get_field('heading_part_1');
 $heading_part_2 = get_field('heading_part_2');
 $text = get_field('logos');
 
-$id = 'left-text-right-image-' . $block['id'];
+$id = 'logos-slider-' . $block['id'];
 
 // create align class ("alignwide") from block setting ("wide")
 $align_class = $block['align'] ? 'align' . $block['align'] : '';
