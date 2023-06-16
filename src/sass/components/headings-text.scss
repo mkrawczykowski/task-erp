@@ -107,5 +107,13 @@
         line-height: 2.8rem;
       }
     }
+
+    &--desktop-mt-big {
+      margin-top: 2.7rem;
+
+      @include media-up(xxl) {
+        margin-top: 2.8rem;
+      }
+    }
   }
 }

@@ -74,6 +74,14 @@ img {
           width: 40%;
         }
       }
+
+      &.col--50 {
+        width: 100%;
+
+        @include media-up(xxl) {
+          width: 50%;
+        }
+      }
     }
   }
 }

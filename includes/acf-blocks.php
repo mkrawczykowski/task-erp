@@ -17,6 +17,7 @@ function acf_init_blocks() {
     require_once get_template_directory() . '/includes/acf-blocks/register-cards-with-icons.php';        
     require_once get_template_directory() . '/includes/acf-blocks/register-video-file.php';        
     require_once get_template_directory() . '/includes/acf-blocks/register-reviews-slider.php';        
+    require_once get_template_directory() . '/includes/acf-blocks/register-contact-info-contact-form.php';        
   }
 }
 add_action('acf/init', 'acf_init_blocks');
