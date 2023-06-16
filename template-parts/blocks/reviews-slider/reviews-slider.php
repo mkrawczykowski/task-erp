@@ -15,7 +15,7 @@ $align_class = $block['align'] ? 'align' . $block['align'] : '';
 
 ?>
 
-<section class="reviews-slider">
+<section class="reviews-slider" id="opinie">
   <div class="container">
     <div class="row">
       <div class="col col--heading">

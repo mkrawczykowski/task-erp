@@ -16,7 +16,7 @@ $align_class = $block['align'] ? 'align' . $block['align'] : '';
 
 ?>
 
-<section class="two-headings-text">
+<section class="two-headings-text" id="dla-kogo">
   <div class="container">
     <div class="row">
       <div class="col">
