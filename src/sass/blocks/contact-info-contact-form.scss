@@ -1,14 +1,26 @@
 .contact-info-contact-form {
-  padding: 7rem 0;
+  padding: 7rem 0 1.9rem;
+
+  @include media-up(xxl) {
+    padding-bottom: 11.5rem;
+  }
 
   .headings-text {
     &__heading-main {
       max-width: 30rem;
+
+      @include media-up(xxl) {
+        max-width: 40rem;
+      }
     }
   }
 
   &__contact-data {
     margin-top: 3.9rem;
+
+    @include media-up(xxl) {
+      margin-top: 5.9rem;
+    }
 
     &>p {
       font-family: 'Rubik', sans-serif;
@@ -55,6 +67,11 @@
 
   .wpcf7 {
     padding-top: 3.7rem;
+
+    @include media-up(xxl) {
+      padding-top: 4.5rem;
+      padding-left: 9.8rem;
+    }
 
     .wpcf7-form {
       position: relative;
@@ -123,6 +140,10 @@
         margin-top: 0.7rem;
         display: inline-block;
 
+        @include media-up(xxl) {
+          margin-top: -0.2rem;
+        }
+
         .wpcf7-list-item {
           margin: 0;
 
@@ -141,6 +162,12 @@
               letter-spacing: 0px;
               padding-left: 3.2rem;
               display: inline-block;
+              color: $secondary300;
+
+              @include media-up(xxl) {
+                left: -2.8rem;
+                top: -0.7rem;
+              }
 
               a {
                 text-decoration: underline;
@@ -215,6 +242,11 @@
         text-align: center;
         position: relative;
         top: -3.4rem;
+
+        @include media-up(xxl) {
+          width: 41%;
+          top: -0.4rem;
+        }
       }
     }
   }
