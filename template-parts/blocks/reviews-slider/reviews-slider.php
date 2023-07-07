@@ -12,11 +12,10 @@ $id = 'reviews-slider-' . $block['id'];
 
 // create align class ("alignwide") from block setting ("wide")
 $align_class = $block['align'] ? 'align' . $block['align'] : '';
-
 ?>
 
 <section class="reviews-slider" id="opinie">
-  <div class="container">
+  <div class="container container--left-auto">
     <div class="row">
       <div class="col col--heading">
         <div class="headings-text headings-text--mobile-left headings-text--desktop-left">
@@ -46,6 +45,14 @@ $align_class = $block['align'] ? 'align' . $block['align'] : '';
               endwhile; ?>
             </ul>
           </div>
+        <?php endif; ?>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <?php if( have_rows('reviews') ): ?>
           <div class="reviews-slider__nav">
             <div class="swiper-pagination"></div>
 

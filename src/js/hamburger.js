@@ -7,9 +7,13 @@ document.addEventListener('DOMContentLoaded', function () {
     mainNav.classList.toggle('active');
     if (hamburger.classList.contains('active')) {
       document.body.style.overflow = 'hidden';
+      // document.body.style.position = 'fixed';
+      document.body.style.paddingRight = '8px';
+
     }
     if (!hamburger.classList.contains('active')) {
       document.body.style.removeProperty('overflow');
+      document.body.style.paddingRight = '0';
     }
 
   });

@@ -37,10 +37,16 @@
       font-weight: 400;
       font-size: 2rem;
       line-height: 2.4rem;
+      transition: all 0.2s ease;
 
       @include media-up(xxl) {
         font-size: 1.6rem;
         line-height: 1.9rem;
+      }
+
+      &:hover {
+        color: $main400;
+        transition: all 0.2s ease;
       }
     }
   }

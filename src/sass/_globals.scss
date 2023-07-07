@@ -41,9 +41,18 @@ img {
     max-width: 125rem;
   }
 
-  &.container--wider {
+  &--wider {
     @include variables.media-up(xxl) {
       max-width: 140rem;
+    }
+  }
+
+  &--left-auto {
+    @include variables.media-up(xxl) {
+      $marginLeft: calc((100% - 125rem) / 2);
+      margin-left: $marginLeft;
+      max-width: calc(100% - $marginLeft);
+      padding-right: 0;
     }
   }
 

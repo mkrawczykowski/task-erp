@@ -111,9 +111,12 @@
         height: 5rem;
         border: 1px solid $secondary100;
         border-radius: 50%;
+        transition: all 0.3s ease;
 
         &:hover {
           cursor: pointer;
+          background-color: $main300;
+          transition: all 0.3s ease;
         }
 
         &.swiper-button-prev {
