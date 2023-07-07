@@ -18,7 +18,7 @@ $id = 'contact-info-contact-form-' . $block['id'];
 $align_class = $block['align'] ? 'align' . $block['align'] : '';
 ?>
 
-<section class="contact-info-contact-form">
+<section class="contact-info-contact-form" id="porozmawiajmy">
   <div class="container">
     <div class="row">
       <div class="col col--50">

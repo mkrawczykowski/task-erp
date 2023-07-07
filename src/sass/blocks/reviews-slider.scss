@@ -1,8 +1,16 @@
 .reviews-slider {
-  padding: 1rem 0;
+  padding: 2.1rem 0 1rem 0;
 
   .headings-text {
     margin-bottom: 6rem;
+
+    @include media-up(xxl) {
+      margin-bottom: 8rem;
+    }
+  }
+
+  &__slider {
+    margin-right: -2rem;
   }
 
   &__reviews-list {
@@ -16,6 +24,11 @@
       border-radius: 1rem;
       height: auto;
 
+      @include media-up(xxl) {
+        max-width: 48.7rem;
+        padding: 2.7rem 2.7rem 2.8rem 2.7rem;
+      }
+
       &-text {
         font-family: 'Rubik', sans-serif;
         font-style: normal;
@@ -24,6 +37,11 @@
         line-height: 2.4rem;
         color: $secondary500;
         margin-bottom: 2rem;
+
+        @include media-up(xxl) {
+          font-size: 1.8rem;
+          line-height: 2.8rem;
+        }
       }
 
       &-name {
@@ -34,6 +52,11 @@
         line-height: 130%;
         letter-spacing: -0.02em;
         margin-bottom: 0.8rem;
+
+        @include media-up(xxl) {
+          font-size: 2.4rem;
+          margin-bottom: 1rem;
+        }
       }
 
       &-position {
@@ -44,6 +67,11 @@
         line-height: 1.4rem;
         letter-spacing: 0.05em;
         text-transform: uppercase;
+        color: $main400;
+
+        @include media-up(xxl) {
+          font-size: 1.4rem;
+        }
       }
     }
   }
@@ -71,7 +99,6 @@
         }
       }
     }
-
 
     &-arrows {
       display: flex;

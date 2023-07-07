@@ -25,7 +25,7 @@ $align_class = $block['align'] ? 'align' . $block['align'] : '';
                 $cards__url = get_sub_field('cards__url');
                 ?>
 
-                  <a target="_blank" href="$cards__url" class="cards-with-icons__card">
+                  <a target="_blank" href="<?php echo $cards__url; ?>" class="cards-with-icons__card">
                     <?php
                       echo wp_get_attachment_image($cards__icon, 'full', NULL, array('class' => 'cards-with-icons__icon', 'loading' => 'lazy' ));
 

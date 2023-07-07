@@ -97,7 +97,7 @@
     }
 
     &--font-small {
-      margin-top: 2.9rem;
+      margin-top: 2.8rem;
       font-size: 1.6rem;
       line-height: 2.4rem;
 
@@ -110,10 +110,6 @@
 
     &--desktop-mt-big {
       margin-top: 2.7rem;
-
-      @include media-up(xxl) {
-        margin-top: 2.8rem;
-      }
     }
   }
 }

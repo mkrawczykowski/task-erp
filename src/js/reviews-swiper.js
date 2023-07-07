@@ -17,6 +17,10 @@ document.addEventListener('DOMContentLoaded', () => {
     hashNavigation: {
       watchState: true,
     },
+    breakpoints: {
+      1600: {
+        spaceBetween: 30,
+      }
+    }
   });
-  console.log(reviewsSwiper);
 })

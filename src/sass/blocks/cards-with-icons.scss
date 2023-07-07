@@ -12,6 +12,7 @@
 
     @include media-up(xxl) {
       justify-content: space-between;
+      gap: 3rem 2rem;
     }
 
     .cards-with-icons__card {
