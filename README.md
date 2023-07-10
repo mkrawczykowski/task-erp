@@ -1,4 +1,4 @@
-# (almost) pixel perfect recruitment assignment - Wordpress website with Gutenberg
+# (almost) Pixel perfect recruitment assignment - Wordpress website with Gutenberg
 
 I was granted permission to publish the result website of recruitment assignment. I haven't used Gutebnberg blocks before, but created some simple custom blocks using ACF Pro.
 To make things simpler I focused on creating only desktop and mobile views.
