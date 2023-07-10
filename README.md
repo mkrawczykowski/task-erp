@@ -4,6 +4,7 @@ I was granted permission to publish the result website of recruitment assignment
 To make things simpler I focused on creating only desktop and mobile views.
 
 production website: http://erp.stronyireszta.pl/
+<br>
 
 - coded from Figma project
 - (almost) pixel perfect
@@ -14,7 +15,7 @@ production website: http://erp.stronyireszta.pl/
 - custom Gutenberg blocks built with ACF Pro
 - Webpack
 
-- ## Exported PNGs from Figma project
+## Exported PNGs from Figma project
 
 - desktop version: [https://stronyireszta.pl/github-portfolio/erp/lp-1440px.png](https://stronyireszta.pl/github-portfolio/erp/lp-1440px.png)
 - mobile version: https://stronyireszta.pl/github-portfolio/erp/lp-390px.png
